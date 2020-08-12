@@ -1,0 +1,32 @@
+{
+  "name": "node-express-api",
+  "version": "1.0.0",
+  "description": "Setup for an API using Node.js and Express.",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "addenv": "echo \"PORT=8080\nNODE_ENV=dev\" >> .env",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ramos-Diego/node-express-api.git"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "Diego Ramos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ramos-Diego/node-express-api/issues"
+  },
+  "homepage": "https://github.com/Ramos-Diego/node-express-api#readme"
+}
