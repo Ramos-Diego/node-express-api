@@ -12,7 +12,6 @@
     "nodemon": "^2.0.4"
   },
   "scripts": {
-    "addenv": "echo \"PORT=8080\nNODE_ENV=dev\" >> .env",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },

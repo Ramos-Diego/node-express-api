@@ -10,13 +10,7 @@ Setup for an API project using Node.js and Express.
 yarn install
 ```
 
-2. Add environment variables
-
-```sh
-sudo yarn addenv
-```
-
-This will create a `.env` file in the root directory with this content:
+2. Create a `.env` file with the following content
 
 ```
 PORT=8080

@@ -26,4 +26,4 @@ app.use(express.urlencoded({ extended: false }))
 // Import and use routers
 app.use('/', require('./routes/index'))
 
-app.listen(PORT, console.log(`Listening on http://localhost:${PORT}`))
+app.listen(PORT, 'localhost', console.log(`Listening on http://localhost:${PORT}`))
