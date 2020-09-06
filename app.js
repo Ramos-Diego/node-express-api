@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const helmet = require('helmet')
+const cors = require('cors')
 
 // Only grab environment variables from .env if app is not running on production
 if (process.env.NODE_ENV !== 'prod') require('dotenv').config()
@@ -13,10 +14,7 @@ const { PORT } = process.env
 app.use(helmet())
 
 // Enable CORS
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*")
-  next()
-})
+app.use(cors())
 
 // Body parser middleware, handle JSON {req.body}
 app.use(express.json())
